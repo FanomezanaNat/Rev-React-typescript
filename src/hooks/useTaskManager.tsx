@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 import { useState } from "react";
 import {Task} from "../interface/Task.tsx";
 
-function useTaskManager(){
+export function useTaskManager(){
     const [title, setTitle] = useState("");
     const [searchKeyword, setSearchKeyword] = useState<string>("");
     const [tasks, setTasks] = useState<Task[]>([]);
